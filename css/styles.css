@@ -1,23 +1,175 @@
-.navbar {
-    margin-bottom: 0;
-    border-radius: 0;
-  }
 
-  footer {
-    background-color: #f2f2f2;
-    padding: 25px;
-  }
+.item1{
+  width: 80rem;
+  margin: 0px 3px 0px 40px;
+}
 
-  .carousel-inner img {
-    width: 100%;
-    margin: auto;
-    min-height:200px;
+.elderScrolljpg{
+  border-radius: 20px;
+}
+
+.item2{
+  width: 80rem;
+  margin: 0px 3px 0px 40px;
+}
+
+.horizonForbidenjpg{
+  border-radius: 20px;
+}
+
+.item3{
+  width: 80rem;
+  margin: 0px 3px 0px 40px;
+}
+
+.spidermanMilesJpg{
+  border-radius: 20px;
+}
+
+body{
+  background-color: rgb(205, 205, 37);
+}
+
+.scorpFont{
+  font-weight: bolder;
+  color: black ;
+}
+
+.linkShop{
+  font-weight: bolder;
+}
+
+.linkList{
+  font-weight: bolder;
+}
+
+.linkEasy{
+  font-weight: bolder;
+}
+.linkNosotros{
+  font-weight: bolder;
+}
+
+.tituloIndex{
+  text-align: center;
+  font-weight: bolder;
+  font-family: 'MuRdOiNk', sans-serif;
+  margin: 15px;
+  font-size: 4rem;
+}
+
+/*propiedad de las imagenes*/
+
+.fifa22Img{    
+  border-radius: 6%;
+}
+.psplusImg{    
+  border-radius: 6%;
+}
+.mortalKombatImg{    
+  border-radius: 6%;    
+}
+.gta5Img{    
+  border-radius: 6%;    
+}
+
+.callOfDuty{
+  border-radius: 6%;  
+}
+
+.deathStranding{
+  border-radius: 6%;
+}
+
+.juegosP1{
+  margin: 20px;
+}
+.juegosP2{
+  margin: 20px;
+}
+
+.subTituloIndex{
+  font-weight: bolder;
+  color: black ;
+  text-align: center;
+  font-family: 'MuRdOiNk', sans-serif;
+  margin: 15px;
+  font-size: 3rem;
+}
+
+.vid1{
+  margin: 4rem;
+}
+
+.vid2{
+  margin: 4rem;
+}
+
+.wspIcon{
+  font-size: 3rem;
+  color: green;
+
+}
+
+h3{
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+h4{
+  font-weight: bolder;
+}
+p{
+  font-weight: bolder;
+}
+
+footer{
+  text-align: end;
+  font-weight: bold;
+  
 }
 
 
 
-@media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+
+@media screen and (max-width:600px){
+
+  .carruselMaster{
+      display: none;
   }
+}

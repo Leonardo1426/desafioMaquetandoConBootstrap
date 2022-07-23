@@ -1,103 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <!--css-->
-  <link rel="stylesheet" href="/css/styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--css mio-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--font-->
+    <link href="http://fonts.cdnfonts.com/css/mortal-kombat" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9be09dccaa.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+  <header>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand bg-warning scorpFont" href="/index.html">Scorpion Game Store </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active bg-warning linkShop" aria-current="page" href="/pages/shop.html">Shop</a>
+              <a class="nav-link bg-warning linkList" href="#">Lista de precios</a>
+              <a class="nav-link bg-warning linkEasy" href="#">Easy Buy</a>
+              <a class="nav-link bg-warning linkNosotros" href="#">Nosotros</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<main>
+
+  <!--carrusel-->
+
+  <section>
+    <div id="carouselExampleCaptions" class="carousel slide carruselMaster" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active item1">
+          <img src="/img/Primer item carrusel.bmp" class="d-block w-100 elderScrolljpg" alt="elder scroll">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item item2">
+          <img src="/img/segundo item carrusel.bmp" class="d-block w-100 horizonForbidenjpg" alt="horizon forbiden west">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item item3">
+          <img src="/img/tercer item carrusel.bmp" class="d-block w-100 spidermanMilesJpg" alt="spiderman miles morales">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="/pages/about.html">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+  </section>
+
+  <div class="container">
+    <div class="row">
+      <h1 class="col-12 tituloIndex">Los Mas Vendidos!</h1>
     </div>
+
+    <div class="container">
+      <div class="row juegosP1">
+        <img class="col-4 mortalKombatImg" src="/img/MORTALKOMBAT11ULTIMATE.png" alt="mortal kombat 11">
+        <img class="col-4 gta5Img" src="/img/GTA5.jpg" alt="grand thief auto cinco">
+        <img class="col-4 fifa22Img" src="/img/FIFA22.jpg" alt=" fifa 22">
+      </div>
+      <div class="row juegosP2">
+        <img class="col-4 psplusImg" src="/img/PSPLUS.jpg" alt=" play station plus">
+        <img class="col-4 callOfDuty" src="/img/CALLOFDUTY.jpg" alt="call of duty">
+        <img class="col-4 deathStranding" src="/img/DeathStranding.jpg" alt="Death Stranding">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <h2 class="col-12 subTituloIndex">Ultimos Lanzamientos!!</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row vid1">
+        <iframe class="col-6" src="https://www.youtube.com/embed/kFlFK45eTqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class="col-6" src="https://www.youtube.com/embed/lQoEB4iNXkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+<div class="container">
+  <div class="row vid2">
+    <iframe class="col-6" src="https://www.youtube.com/embed/lHtytAZHT2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe class="col-6" src="https://www.youtube.com/embed/kOmoFMotVQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-</nav>
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
-        <div class="carousel-caption">
-          <h3>Sell $</h3>
-          <p>Money Money.</p>
-        </div>      
-      </div>
-
-      <div class="item">
-        <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
-        <div class="carousel-caption">
-          <h3>More Sell $</h3>
-          <p>Lorem ipsum...</p>
-        </div>      
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
 </div>
-  
-<div class="container text-center">    
-  <h3>What We Do</h3><br>
+
+
+<div class="container">
   <div class="row">
-    <div class="col-sm-4">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Current Project</p>
+    <h3>Tienda de Juegos Digitales para PS4 en Argentina</h3>
+  </div>
+  <div class="row">
+    <p>Somos la tienda online de confianza de más de 500 gamers que disfrutan de todos los lanzamientos de PS4 y que además se benefician de ofertas únicas y sistemas de canjes disponibles en exclusiva para nuestros clientes.</p>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <h4>CALIDAD</h4>
+      <p>Nuestros juegos digitales son versiones completas y originales de Playstation.</p>
     </div>
-    <div class="col-sm-4"> 
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Project 2</p>    
+    <div class="col-4">
+      <h4>SEGURIDAD</h4>
+      <p>Tu compra está protegida por MercadoPago y tu juego cuenta con garantía de por vida.</p>
     </div>
-    <div class="col-sm-4">
-      <div class="well">
-       <p>Some text..</p>
-      </div>
-      <div class="well">
-       <p>Some text..</p>
-      </div>
+    <div class="col-4">
+      <h4>ATENCIÓN</h4>
+      <p>Desde el momento que pasas a ser cliente, contás con soporte vía WhatsApp y atención personalizada para consultas y ayuda.</p>
     </div>
   </div>
-</div><br>
+</div>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
 
+
+<div class="container">
+  <div class="row">
+    <h3>Podes contactarnos a nuestro whatsapp                <a href="https://wa.me/3518699208"><i class="fa-brands fa-whatsapp-square wspIcon"></i></a></h3>
+  </div>
+</div>
+
+
+
+
+
+<footer>© 2021 Todos los derechos reservados a scorpion game store</footer>
+
+
+
+
+
+</main>
+
+    <!--script JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> 
 </body>
 </html>
